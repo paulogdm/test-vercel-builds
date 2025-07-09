@@ -1,6 +1,10 @@
 {
   "name": "test-vercel-builds",
   "version": "0.1.0",
-  "private": true,
-  "packageManager": "pnpm"
+  "pnpm": {
+		"onlyBuiltDependencies": [
+			"esbuild"
+		]
+	},
+  "private": true
 }
